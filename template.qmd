@@ -1,10 +1,10 @@
 ---
-author: Pierre Curie
-qualifications: Nobel Prize, PhD
-position: Professor
-www: curie.com
-email: Pierre.Curie@monash.edu
-phone: +61 3 9905 5555
+author: Patrick Kraft
+qualifications: PhD
+position: Ramón y Cajal Research Fellow
+www: pwkraft.github.io
+email: patrick.kraft@csic.es
+phone: +34 611 634 135
 #signature: sigfile.png
 address:
   - Hypatia

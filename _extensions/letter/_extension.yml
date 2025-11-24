@@ -1,5 +1,5 @@
-title: Monash Letter
-author: Rob J Hyndman
+title: CSIC Letter
+author: Patrick Kraft (based on Monash Letter by Rob J Hyndman)
 version: 3.0.0
 quarto-required: ">=1.4.0"
 contributes:
@@ -22,11 +22,9 @@ contributes:
         - "after-body.tex"
         - "before-title.tex"
       format-resources:
-        - monash2.png
-        - MBSportrait.jpg
-        - EQUIS.png
-        - AMBA.png
-        - AACSB.png
+        - csic.png
+        - ipp.png
+        - europe_age_csic_ipp.png
     typst:
       date: today
       date-format: "D MMMM YYYY"
@@ -38,8 +36,6 @@ contributes:
       font-paths:
         - fonts
       format-resources:
-        - monash2.png
-        - MBSportrait.jpg
-        - EQUIS.png
-        - AMBA.png
-        - AACSB.png
+        - csic.png
+        - ipp.png
+        - europe_age_csic_ipp.png

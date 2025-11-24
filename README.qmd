@@ -16,7 +16,7 @@ fs::file_copy("_extensions/letter/sigfile.png", "sigfile.png", overwrite = TRUE)
 system("sed -i 's/^#signature/signature/' template.qmd")
 quarto_render(input = "template.qmd")
 system("sed -i 's/^signature/#signature/' template.qmd")
-fs::file_delete(c("AACSB.png","AMBA.png","EQUIS.png","MBSportrait.jpg","monash2.png","sigfile.png"))
+fs::file_delete(c("csic.png","ipp.png","europe_age_csic_ipp.png","sigfile.png"))
 # Convert rendered PDF to PNG
 image_read_pdf("template.pdf", pages = 1) |>
   image_montage(geometry = "x1000+25+35", tile = 1, bg = "grey92", shadow = TRUE) |>
@@ -26,11 +26,13 @@ image_read_pdf("template.pdf", pages = 1) |>
 fs::file_move("template.pdf", "examples/template.pdf")
 ```
 
-# Monash Letter Format Template
+# CSIC Letter Format Template
 
-This is a Quarto template that assists you in creating a letter on Monash University letterhead. There are two versions of the template, one using LaTeX (`letter-pdf`), and one using Typst (`letter-typst`). The latter is faster to render.
+This is a Quarto template that assists you in creating a letter on IPP-CSIC letterhead. There are two versions of the template, one using LaTeX (`letter-pdf`), and one using Typst (`letter-typst`). The latter is faster to render.
 
-## Creating a new letter
+This template is a fork from  Rob J Hyndman's [Monash Letter Format Template](https://github.com/quarto-monash/letter)
+
+<!-- ## Creating a new letter
 
 You can use this as a template to create a letter.
 To do this, use the following command:
@@ -48,7 +50,7 @@ From the quarto project or document directory, run the following command to inst
 
 ```bash
 quarto install extension quarto-monash/letter
-```
+``` -->
 
 ## Example
 
