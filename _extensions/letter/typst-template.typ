@@ -180,7 +180,7 @@
 
   // Display date. If there's no date add some hidden
   // text to keep the same spacing.
-  align(left, if date != none {
+  align(right, if date != none {
     date
   } else {
     hide("a")
