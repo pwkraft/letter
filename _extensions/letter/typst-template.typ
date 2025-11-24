@@ -198,15 +198,15 @@
 
   v(0.5cm)
 
-  // Add opening salutation
-  if opening != none {
-    opening
+  // Add the subject line, if any.
+  if subject != none {
+    pad(right: 10%, strong(subject))
     v(0.2cm)
   }
 
-  // Add the subject line, if any.
-  if subject != none {
-    pad(right: 10%, strong("Re: " + subject))
+  // Add opening salutation
+  if opening != none {
+    opening
   }
 
   // Add body and name.
